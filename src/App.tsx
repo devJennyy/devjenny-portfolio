@@ -13,14 +13,12 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <Router>
-      <div className="w-full absolute">
-        <div className="w-[22.3rem] h-[22.3rem] bg-[#2A3E84] rounded-full top-[-4rem] left-[-4rem] absolute blur-[10rem]"></div>
-        <div className="w-[22.3rem] h-[22.3rem] bg-[#2A3E84] rounded-full top-[-4rem] left-[70rem] absolute blur-[10rem]"></div>
-        <div className="w-[22.3rem] h-[22.3rem] bg-[#192065] rounded-full top-[14rem] left-[60rem] absolute blur-[10rem]"></div>
-        {/* <img src="/icons/bg-layer-one.svg"/>
-        <img src="/icons/bg-layer-two.svg" className="top-[-20rem] left-[40rem] absolute"/>
-        <img src="/icons/bg-layer-two.svg" className="top-[-5rem] left-[30rem] absolute"/> */}
+
+      <Router>
+      <div className="w-full absolute z-0">
+        <div className="w-[22.3rem] h-[22.3rem] bg-[#2A3E84] rounded-full top-[-4rem] left-[-4rem] absolute blur-[10rem] object-cover"></div>
+        <div className="w-[22.3rem] h-[22.3rem] bg-[#2A3E84] rounded-full top-[-4rem] left-[70rem] absolute blur-[10rem] object-cover"></div>
+        <div className="w-[22.3rem] h-[22.3rem] bg-[#192065] rounded-full top-[14rem] left-[60rem] absolute blur-[10rem] object-cover"></div>
       </div>
 
       <Routes>
@@ -32,6 +30,7 @@ function App() {
         <Route path="/getintouch" element={<Contact />} />
       </Routes>
     </Router>
+
   );
 }
 
