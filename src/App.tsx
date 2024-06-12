@@ -6,6 +6,10 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import Homepage from "./pages/Homepage";
+import AboutMe from "./pages/AboutMe";
+import Experience from "./pages/Experience";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -22,6 +26,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/homepage" replace />} />
         <Route path="/homepage" element={<Homepage />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/workexperiences" element={<Experience />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/getintouch" element={<Contact />} />
       </Routes>
     </Router>
   );
