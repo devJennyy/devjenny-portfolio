@@ -2,38 +2,44 @@ interface Props {
   title: string;
   description: string;
   techStacks: string[];
+  imagePosition?: string;
+  cardDetailsPosition?: string;
 }
 
-const ProjectCard = ( {title, description, techStacks} : Props) => {
+const ProjectCard = ({
+  title,
+  description,
+  techStacks,
+  imagePosition,
+  cardDetailsPosition,
+}: Props) => {
   return (
-    <div className="flex flex-1 w-full my-[3rem] items-start">
+    <div className={`flex flex-1 ${imagePosition} w-full my-[3rem]`}>
       {/* Images */}
-      <div className="bg-[#161930] w-[38rem] h-[21.5rem] rounded-2xl absolute z-20"></div>
+      <div className="bg-[#161930] w-[36rem] h-[21.5rem] rounded-2xl absolute z-20"></div>
 
-      <div className="flex flex-col flex-1 justify-start items-end gap-4 relative">
-        <div className="flex flex-col flex-1 justify-start items-end relative">
+      {/* Project Description */}
+      <div
+        className={`flex flex-col flex-1 ${cardDetailsPosition} gap-4 relative`}
+      >
+        <div className="flex flex-col">
           <p className="text-[#6EE7B7]">Featured Project</p>
-          <p className="text-[#CCD6F6] text-[34px] font-semibold">
-           {title}
-          </p>
+          <p className="text-[#CCD6F6] text-[34px] font-semibold">{title}</p>
         </div>
 
-        {/* Project Description */}
         <div className="gradient-border-style-opposite w-[30rem] h-[10rem] rounded-2xl z-50 relative mt-3">
           <div className="average-content-style-opposite p-5">
             <p className="text-justify text-[15px] leading-6 line-clamp-5">
-             {description}
+              {description}
             </p>
           </div>
         </div>
 
         {/* Techstack used */}
-        <div className="flex flex-col items-end gap-3">
+        <div className={`flex flex-col gap-3 ${cardDetailsPosition}`}>
           <div className="flex gap-4 font-extralight text-[15px]">
             {techStacks?.map((techStack) => {
-              return (
-                <p>{techStack}</p>
-              )
+              return <p>{techStack}</p>;
             })}
           </div>
           <div className="flex gap-4">

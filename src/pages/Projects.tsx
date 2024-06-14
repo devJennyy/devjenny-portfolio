@@ -8,12 +8,16 @@ const Projects = () => {
       description:
         "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
       techStacks: ["ReactJS", "Typescript", "TailwindCSS"],
+      imagePosition: "flex-row",
+      cardDetailsPosition: "items-end text-right",
     },
     {
       title: "Example Project",
       description:
         "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
       techStacks: ["ReactJS", "Typescript", "TailwindCSS"],
+      imagePosition: "flex-row-reverse",
+      cardDetailsPosition: "items-start text-left",
     },
   ];
   return (
@@ -21,17 +25,19 @@ const Projects = () => {
       <div className="w-2/3 pl-[3.5rem] relative overflow-y-auto no-scrollbar">
         <Header pageNumber={3} pageTitle={"Some Things I’ve Built"} />
 
-       <div className="flex flex-col overflow-y-auto">
-       {projects?.map((project) => {
-          return (
-            <ProjectCard
-              title={project.title}
-              description={project.description}
-              techStacks={project.techStacks}
-            />
-          );
-        })}
-       </div>
+        <div className="flex flex-col overflow-y-auto">
+          {projects?.map((project) => {
+            return (
+              <ProjectCard
+                title={project.title}
+                description={project.description}
+                techStacks={project.techStacks}
+                imagePosition={project.imagePosition}
+                cardDetailsPosition={project.cardDetailsPosition}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
