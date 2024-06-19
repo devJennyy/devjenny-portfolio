@@ -13,8 +13,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-
-      <Router>
+    <Router>
       <div className="w-full absolute z-0">
         <div className="w-[22.3rem] h-[22.3rem] bg-[#2A3E84] rounded-full top-[-4rem] left-[-4rem] absolute blur-[10rem] object-cover"></div>
         <div className="w-[22.3rem] h-[22.3rem] bg-[#2A3E84] rounded-full top-[-4rem] left-[70rem] absolute blur-[10rem] object-cover"></div>
@@ -24,13 +23,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/homepage" replace />} />
         <Route path="/homepage" element={<Homepage />} />
-        <Route path="/aboutme" element={<AboutMe />} />
-        <Route path="/workexperiences" element={<Experience />} />
+        <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/work-experiences" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/getintouch" element={<Contact />} />
+        <Route path="/contact-me" element={<Contact />} />
       </Routes>
     </Router>
-
   );
 }
 
