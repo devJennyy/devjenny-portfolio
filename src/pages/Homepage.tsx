@@ -25,7 +25,7 @@ const Homepage = () => {
             </button>
             <button className="flex justify-center items-center w-[16.5rem] h-full gradient-all-borders">
               <div className="content gap-3">
-                <p>Contact me</p>
+                <p>Hire Me</p>
                 <img src="/icons/contact.svg" className="w-[1rem]" />
               </div>
             </button>

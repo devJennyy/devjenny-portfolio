@@ -27,13 +27,13 @@ const Contact = () => {
       socialLinksVisibility: "hidden",
       buttons: [
         {
-          type: "Hello",
+          type: "Email Me",
         },
         {
-          type: "Hello",
+          type: "Contact Me",
         },
         {
-          type: "Hello",
+          type: "Buy Me Coffee",
         }
       ],
       buttonPosition: "flex flex-col px-16 h-full",

@@ -26,7 +26,9 @@ const ContactCard = ({ avatarClassname, cardPosition, title, socialLinksVisibili
           {/* Card Details*/}
           <div className="flex flex-col h-full w-full">
             <div className="flex flex-col justify-start items-center p-10 gap-7">
-              <div className={`flex rounded-full bg-[#161A42] ${avatarClassname}`}></div>
+              <div
+                className={`flex rounded-full bg-[#161A42] ${avatarClassname}`}
+              ></div>
               <div className="flex flex-col gap-1 text-[#B1BAED]">
                 <p className="text-[19px] font-medium">{title}</p>
                 <p className="text-[13px] font-light">{subtitle}</p>
@@ -36,10 +38,10 @@ const ContactCard = ({ avatarClassname, cardPosition, title, socialLinksVisibili
             <div className={`flex-col gap-5 ${socialLinksVisibility}`}>
               <div className="gradient-border-double"></div>
               <div className="flex justify-center items-center gap-10 text-[#B1BAED] px-[5rem]">
-                <a href="https://www.facebook.com/">
+                <a href="https://m.me/devjennyy">
                   <FaFacebookMessenger size={20} />
                 </a>
-                <a href="https://github.com/devJennyy">
+                <a href="https://wa.me/639627458011">
                   <FaWhatsapp size={22} />
                 </a>
                 <a href="https://github.com/devJennyy">
@@ -52,13 +54,15 @@ const ContactCard = ({ avatarClassname, cardPosition, title, socialLinksVisibili
               <div className="gradient-border-double"></div>
             </div>
             {/* Download Links */}
-            <div className={`flex w-full gap-3 text-[12px] text-[#B1BAED] font-regular ${buttonPosition}`}>
+            <div
+              className={`flex w-full gap-3 text-[12px] text-[#B1BAED] font-regular ${buttonPosition}`}
+            >
               {buttons?.map((buttonDirectory) => {
                 return (
-                  <div className="flex justify-center items-center w-full h-[3rem] bg-[#161A42] rounded-lg gap-2">
+                  <a href="devjenny.official@gmail.com" className="flex justify-center items-center w-full h-[3rem] bg-[#161A42] rounded-lg gap-2">
                     <FaDownload size={12} />
                     <p>{buttonDirectory.type}</p>
-                  </div>
+                  </a>
                 );
               })}
             </div>
