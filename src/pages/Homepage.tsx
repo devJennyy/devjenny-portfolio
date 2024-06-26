@@ -1,4 +1,5 @@
 import { LuArrowUpRight } from "react-icons/lu";
+import { Button } from "../components/ui/moving-border";
 
 const Homepage = () => {
   return (
@@ -7,7 +8,7 @@ const Homepage = () => {
       <div className="w-full h-[100px]"></div>
 
       <div className="flex justify-between w-full h-full">
-        {/* Left Ornaments */}
+        {/* Left Styling Ornaments */}
         <div className="w-[24rem] h-full relative">
           <img
             src="/vectors/ornament-medium-one.svg"
@@ -28,15 +29,11 @@ const Homepage = () => {
         </div>
 
         {/* Content */}
-        <div className="min-w-[920px] pl-[100px] h-full">
-          <div className="flex flex-col w-full h-full text-left z-50">
+        <div className="min-w-[920px] pl-[100px] h-full text-[#B1BAED]">
+          <div className="flex flex-col w-full h-full text-left z-50 gap-[3rem]">
             <div className="flex flex-col mt-[10.3rem] gap-3">
-              <p className="text-[1rem] font-medium gradient-text">
-                Hi, my name is
-              </p>
-              <p className="text-[4.1rem] font-bold text-[#B1BAED]">
-                Jenny Pieloor
-              </p>
+              <p className="text-[1rem] font-medium ">Hi, my name is</p>
+              <p className="text-[4.1rem] font-bold">Jenny Pieloor</p>
               <p className="text-[4.1rem] font-bold mt-[-24px] text-[#B1BAED]/60">
                 I am a Frontend Dev.
               </p>
@@ -48,16 +45,27 @@ const Homepage = () => {
               </p>
             </div>
 
-            <button className="w-[14.5rem] h-[3.3rem] mt-[3rem] gradient-all-borders text-[#B1BAED] ">
-              <div className="flex-row-reverse justify-center items-center w-full h-full content gap-2">
-                <LuArrowUpRight size={18} className="ml-[-5px]" />
-                <p>Hire me</p>
+            <Button
+              borderRadius="1rem"
+              duration={4000}
+              className="bg-gradient-to-b from-[#161A42] to-[#161A42]/10 text-[#B1BAED] border-[#161A42]"
+            >
+              <div className="flex justify-center items-center w-full h-full content gap-1">
+                <p className="text-[1rem]">Hire me</p>
+                <LuArrowUpRight size={18} />
               </div>
-            </button>
+            </Button>
+
+            {/* <button className="inline-flex w-[14.5rem] h-[3.3rem] animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#161A42,#161A42,45%,#515AB4,55%,#161A42)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+              <div className="flex justify-center items-center w-full h-full content gap-1">
+                <p className="text-[1rem]">Hire me</p>
+                <LuArrowUpRight size={18} />
+              </div>
+            </button> */}
           </div>
         </div>
 
-        {/* Right Ornaments */}
+        {/* Right Styling Ornaments */}
         <div className="w-[35rem] h-full">
           <img
             src="/vectors/ornament-medium-two.svg"
