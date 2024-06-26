@@ -1,5 +1,4 @@
 import { LuArrowUpRight } from "react-icons/lu";
-import { Button } from "../components/ui/moving-border";
 
 const Homepage = () => {
   return (
@@ -45,23 +44,14 @@ const Homepage = () => {
               </p>
             </div>
 
-            <Button
-              borderRadius="1rem"
-              duration={4000}
-              className="bg-gradient-to-b from-[#161A42] to-[#161A42]/10 text-[#B1BAED] border-[#161A42]"
-            >
-              <div className="flex justify-center items-center w-full h-full content gap-1">
-                <p className="text-[1rem]">Hire me</p>
-                <LuArrowUpRight size={18} />
+            <button className="w-[14.5rem] h-[3.2rem]">
+              <div className="w-full h-full bg-gradient-to-b from-[#161A42] to-[#161A42]/10 text-[#B1BAED] border-[#161A42] rounded-md">
+                <div className="flex justify-center items-center w-full h-full content gap-1">
+                  <p className="text-[1rem]">Hire me</p>
+                  <LuArrowUpRight size={18} />
+                </div>
               </div>
-            </Button>
-
-            {/* <button className="inline-flex w-[14.5rem] h-[3.3rem] animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#161A42,#161A42,45%,#515AB4,55%,#161A42)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-              <div className="flex justify-center items-center w-full h-full content gap-1">
-                <p className="text-[1rem]">Hire me</p>
-                <LuArrowUpRight size={18} />
-              </div>
-            </button> */}
+            </button>
           </div>
         </div>
 

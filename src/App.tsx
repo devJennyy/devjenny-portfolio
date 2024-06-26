@@ -10,6 +10,7 @@ import AboutMe from "./pages/AboutMe";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import AboutMeV2 from "./pages/AboutMeV2";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Navigate to="/homepage" replace />} />
         <Route path="/homepage" element={<Homepage />} />
         <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/about-me-v2" element={<AboutMeV2 />} />
         <Route path="/work-experiences" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact-me" element={<Contact />} />
