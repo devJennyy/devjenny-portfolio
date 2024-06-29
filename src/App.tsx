@@ -8,9 +8,10 @@ import "./App.css";
 import Homepage from "./pages/Homepage";
 import AboutMe from "./pages/AboutMe";
 import Experience from "./pages/Experience";
-import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import AboutMeV2 from "./pages/AboutMeV2";
+import AboutMeCard from "./pages/AboutMeCard";
+import ProjectsOldVersion from "./pages/ProjectsOldVersion";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -25,8 +26,9 @@ function App() {
         <Route path="/" element={<Navigate to="/homepage" replace />} />
         <Route path="/homepage" element={<Homepage />} />
         <Route path="/about-me" element={<AboutMe />} />
-        <Route path="/about-me-v2" element={<AboutMeV2 />} />
+        <Route path="/about-me-card" element={<AboutMeCard />} />
         <Route path="/work-experiences" element={<Experience />} />
+        <Route path="/projects-oldversion" element={<ProjectsOldVersion />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact-me" element={<Contact />} />
       </Routes>

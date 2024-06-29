@@ -27,8 +27,8 @@ const ProjectBentoCard = ({
   return (
     <div className={`flex gap-5 w-full h-full ${imageCardPosition}`}>
       {/* Cover Photo */}
-      <div className="bg-[#111534] w-full h-full rounded-xl gradient-border">
-        <div className="average-content"></div>
+      <div className="bg-[#111534] w-full h-full rounded-xl faded-gradient">
+        <div className="faded-gradient-bg"></div>
       </div>
 
       {/* Details */}
@@ -65,7 +65,7 @@ const ProjectBentoCard = ({
               </div>
             </div>
 
-            {/* Tech Stack */}
+            {/* Tech Stack With Icon*/}
             <div className="flex items-center justify-center w-full h-full gap-4">
               {techStackIcon?.map((techStackUsedIcons) => {
                 return (
@@ -82,7 +82,7 @@ const ProjectBentoCard = ({
               })}
             </div>
 
-            {/* Tech Stacks With Icon */}
+            {/* Tech Stacks */}
             <div className="flex gap-4 font-extralight text-[12px]">
               {techStack?.map((techStackUsed) => {
                 return <p>{techStackUsed}</p>;
