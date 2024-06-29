@@ -23,7 +23,7 @@ const Experience = () => {
           <p className="tracking-[10px] mt-[1rem]">Worked</p>
         </div>
       </div>
-      {/* <div className="flex flex-col flex-1 justify-center w-full h-full">
+      <div className="flex flex-col flex-1 justify-center w-full h-full">
         <div className="flex items-start w-full h-[16rem] border-b-2 border-[#161A42] pt-[4rem]">
           <div className="h-full w-[14rem]">
             <p className="text-[50px] font-extralight">01</p>
@@ -44,7 +44,7 @@ const Experience = () => {
             <p className="text-[50px] font-extralight">02</p>
           </div>
           <div className="flex flex-col w-[35rem] h-full text-left">
-            <p className="text-[50px] font-semibold">Frontend Developer</p>
+            <p className="text-[50px] font-semibold">Freelance FE Dev.</p>
             <div className="flex flex-col gap-1 mt-5">
               <p>January 2024 - June 2024</p>
               <p className="text-[#CCD6F6]/60">
@@ -71,9 +71,9 @@ const Experience = () => {
             <img src="/icons/arrow-upward.svg" />
           </div>
         </div>
-      </div> */}
+      </div>
 
-      <div className="w-full">
+      {/* <div className="w-full">
         <div className="flex items-start w-full h-[16rem] pt-[6rem]">
           <div className="h-full w-[14rem]">
             <p className="text-[50px] font-extralight">01</p>
@@ -87,7 +87,6 @@ const Experience = () => {
 
             <div className="w-full h-[1px] border border-[#161A42] my-[3rem]"></div>
 
-            {/* Details */}
             <div className="flex flex-col gap-5 text-[#CCD6F6]/70 font-light">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -103,7 +102,6 @@ const Experience = () => {
               </p>
             </div>
 
-            {/* Tech Stack With Icon*/}
             <div className="flex flex-col w-full h-full z-25 mt-16 gap-5">
               <p className="font-medium">Tech Used:</p>
               <div className="grid grid-cols-4 items-center justify-center w-fit h-full gap-6">
@@ -126,7 +124,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
