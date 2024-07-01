@@ -2,7 +2,7 @@ const Projects = () => {
   return (
     <div className="w-full h-full">
       {/* Hero */}
-      {/* <div className="max-w-[1280px] mx-auto h-full relative">
+      <div className="max-w-[1280px] mx-auto h-full relative">
         <img
           src="/vectors/ellipse-small.svg"
           className="absolute top-[12rem] left-[35rem]"
@@ -30,13 +30,11 @@ const Projects = () => {
             <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gradient-to-tr from-[#70DBE3] via-[#52ACEE] to-[#1639F4]"></span>
           </button>
         </div>
-      </div> */}
+      </div>
 
       {/* Featured Project for Mobile */}
-      <div className="flex w-full h-full text-[#CCD6F6]">
-        {/* Featured Cover */}
+      {/* <div className="flex w-full h-full text-[#CCD6F6]">
         <div className="w-1/2 h-full z-50">
-          {/* Left Layer Blur */}
           <div className="w-full h-full">
             <img
               src="/vectors/layer-blur-small.svg"
@@ -52,7 +50,6 @@ const Projects = () => {
             />
           </div>
 
-          {/* Right Layer Blur */}
           <div className="w-full h-full">
             <img
               src="/vectors/layer-blur-extrasmall.svg"
@@ -68,22 +65,18 @@ const Projects = () => {
             />
           </div>
 
-          {/* Main Feature */}
           <img
             src="/fav/mobile-project-template.png"
             className="absolute bottom-[18.2rem] left-[16.6rem]"
           />
 
-          {/* Bottom Highlight */}
           <img
             src="/fav/radial-gradient.svg"
             className="absolute bottom-[11rem] left-[14rem]"
           />
         </div>
 
-        {/* Description */}
         <div className="w-1/2 h-full">
-          {/* Project Description */}
           <div className="flex flex-col flex-1 items-start justify-center text-left gap-4 relative h-full pl-5">
             <div className="flex flex-col">
               <p className="bg-gradient-to-tr from-[#70DBE3] via-[#52ACEE] to-[#1639F4] bg-clip-text text-transparent font-semibold">
@@ -97,16 +90,14 @@ const Projects = () => {
             <div className="gradient-border-style-opposite w-[32rem] rounded-2xl z-50 relative mt-1">
               <div className="average-content-style-opposite p-6">
                 <p className="text-justify leading-6 line-clamp-5">
-                  A web app for visualizing personalized Spotify data. View your
-                  top artists, top tracks, recently played tracks, and detailed
-                  audio information about each track. Create and save new
-                  playlists of recommended tracks based on your existing
-                  playlists and more.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsam, enim quibusdam pariatur obcaecati, doloribus fugit
+                  accusantium itaque unde impedit tenetur, maiores ut labore
+                  molestiae totam voluptas qui quo quod temporibus maiores ut
+                  labore.
                 </p>
               </div>
             </div>
-
-            {/* Techstack used */}
 
             <div className="flex gap-4 font-extralight mt-2">
               <p>React</p>
@@ -114,7 +105,6 @@ const Projects = () => {
               <p>TailwindCSS</p>
             </div>
 
-            {/* Direct Links */}
             <div className="flex gap-4">
               <a href="https://github.com/devJennyy">
                 <img src="/icons/github-icon.svg" />
@@ -125,7 +115,73 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      {/* Featured Project for Web */}
+      {/* <div className="flex w-full h-full text-[#CCD6F6]">
+        <div className="w-1/2 h-full">
+          <div className="flex flex-col flex-1 items-start justify-center text-left gap-4 relative h-full pl-[16rem]">
+            <div className="flex flex-col">
+              <p className="bg-gradient-to-tr from-[#70DBE3] via-[#52ACEE] to-[#1639F4] bg-clip-text text-transparent font-semibold">
+                Featured Project
+              </p>
+              <p className="text-[#CCD6F6] text-[34px] font-semibold">
+                Example Project
+              </p>
+            </div>
+
+            <div className="gradient-border-style-opposite w-[32rem] rounded-2xl z-50 relative mt-1">
+              <div className="average-content-style-opposite p-6">
+                <p className="text-justify leading-6 line-clamp-5">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsam, enim quibusdam pariatur obcaecati, doloribus fugit
+                  accusantium itaque unde impedit tenetur, maiores ut labore
+                  molestiae totam voluptas qui quo quod temporibus maiores ut
+                  labore.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4 font-extralight mt-2">
+              <p>React</p>
+              <p>Typescript</p>
+              <p>TailwindCSS</p>
+            </div>
+
+            <div className="flex gap-4">
+              <a href="https://github.com/devJennyy">
+                <img src="/icons/github-icon.svg" />
+              </a>
+              <a href="https://github.com/devJennyy">
+                <img src="/icons/arrow-up.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-1/2 h-full z-50">
+          <img
+            src="/vectors/layer-blur-small.svg"
+            className="absolute bottom-[30rem] right-[59rem]"
+          />
+          <img
+            src="/vectors/layer-blur-small.svg"
+            className="absolute top-[11.5rem] right-[45rem]"
+          />
+          <img
+            src="/vectors/layer-blur-semimedium.svg"
+            className="absolute bottom-[24rem] right-[6rem]"
+          />
+          <img
+            src="/fav/web-project-template.svg"
+            className="absolute bottom-[23.7rem] right-[16rem]"
+          />
+          <img
+            src="/fav/radial-gradient.svg"
+            className="absolute bottom-[11rem] right-[24rem]"
+          />
+        </div>
+      </div> */}
     </div>
   );
 };
