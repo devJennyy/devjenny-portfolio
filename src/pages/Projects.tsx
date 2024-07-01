@@ -1,4 +1,54 @@
+import ProjectBentoCard from "../components/ProjectBentoCard";
+
 const Projects = () => {
+  const otherProjects = [
+    {
+      imageCardPosition: "flex-col",
+      detailsCardClassname: "min-h-[19.4rem] gradient-project-style-one",
+      githubLink: "https://github.com/devJennyy",
+      websiteLink: "https://github.com/devJennyy",
+      title: "Title Here",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aliquam deserunt repellendus.",
+      techStack: ["UI & UX Design", "Figma", "Wireframe"],
+      gradientPosition: "bg-[length:400px_390px] bg-[center_bottom_-12rem]",
+    },
+    {
+      imageCardPosition: "flex-col-reverse",
+      detailsCardClassname: "min-h-[23.4rem] gradient-project-style-two",
+      githubLink: "https://github.com/devJennyy",
+      websiteLink: "https://github.com/devJennyy",
+      title: "Title Here",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aliquam deserunt repellendus.",
+      techStackIcon: [
+        {
+          icon: "/icons/react.svg",
+          name: "React",
+        },
+        {
+          icon: "/icons/react.svg",
+          name: "React",
+        },
+        {
+          icon: "/icons/react.svg",
+          name: "React",
+        },
+      ],
+      gradientPosition: "bg-[length:300px_300px] bg-[top_-9rem_left_-9rem]",
+    },
+    {
+      imageCardPosition: "flex-col",
+      detailsCardClassname: "min-h-[19.4rem] gradient-project-style-two",
+      githubLink: "https://github.com/devJennyy",
+      websiteLink: "https://github.com/devJennyy",
+      title: "Title Here",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aliquam deserunt repellendus.",
+      techStack: ["UI & UX Design", "Figma", "Wireframe"],
+      gradientPosition: "bg-[length:400px_390px] bg-[top_-10rem_left_-10rem]",
+    },
+  ];
   return (
     <div className="w-full h-full">
       {/* Hero */}
@@ -180,6 +230,33 @@ const Projects = () => {
             src="/fav/radial-gradient.svg"
             className="absolute bottom-[11rem] right-[24rem]"
           />
+        </div>
+      </div> */}
+
+      {/* Other Projects */}
+      {/* <div className="flex flex-col max-w-[1090px] mx-auto h-full my-[8.5rem] gap-28 text-[#CCD6F6]">
+        <div className="flex gap-5 justify-center items-center relative">
+          <div className="gradient-border-bottom-small left-0"></div>
+          <p className="text-[1.8rem] font-bold">Other Noteworthy Projects</p>
+          <div className="gradient-border-bottom-small right-0"></div>
+        </div>
+
+        <div className="flex justify-between w-full h-[33.5rem] gap-7">
+          {otherProjects?.map((otherProject) => {
+            return (
+              <ProjectBentoCard
+                imageCardPosition={otherProject.imageCardPosition}
+                detailsCardClassname={otherProject.detailsCardClassname}
+                githubLink={otherProject.githubLink}
+                websiteLink={otherProject.websiteLink}
+                title={otherProject.title}
+                description={otherProject.description}
+                techStack={otherProject.techStack}
+                techStackIcon={otherProject.techStackIcon}
+                gradientPosition={otherProject.gradientPosition}
+              />
+            );
+          })}
         </div>
       </div> */}
     </div>
